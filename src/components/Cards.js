@@ -19,7 +19,7 @@ function Card({countdownTimestamp}) {
   }, [countdownTimestamp]);
 
   function updateRemainingTime(countdown) {
-    setRemaining(GetsRemainingTimestamp(countdown))
+    setRemaining  (GetsRemainingTimestamp(countdown))
   }
 
   return (
