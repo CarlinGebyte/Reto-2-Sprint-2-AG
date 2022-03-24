@@ -69,7 +69,11 @@ export const CardItem = styled.div`
 `;
 
 export const CountCard = styled.div`
-  background-color: #34364f;
+  background: linear-gradient(
+    180deg,
+    rgba(44, 44, 68, 1) 49%,
+    rgba(52, 54, 79, 1) 49%
+  );
   width: 70%;
   display: inline-block;
   padding: 13px 7px 13px 5px;
