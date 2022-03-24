@@ -10,7 +10,7 @@ function App() {
         <Title></Title>
       </Header>
       <main>
-        <Card countdownTimestamp={1655199900000}></Card>
+        <Card countdownTimestamp={1659196795000}></Card>
       </main>
       <Footer></Footer>
     </ContainerAll>
