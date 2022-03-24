@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { CardItem, CardsContainer, CardText, CountCard } from "../styles/styled";
 import GetsRemainingTimestamp from "./CardUtils";
 
 const timeRemain = {
@@ -23,12 +24,24 @@ function Card({countdownTimestamp}) {
   }
 
   return (
-    <div>
-      <span>{remaining.days}</span>
-      <span>{remaining.hours}</span>
-      <span>{remaining.minutes}</span>
-      <span>{remaining.seconds}</span>
-    </div>
+    <CardsContainer>
+      <CardItem>
+        <CountCard>{remaining.days}</CountCard>
+        <CardText>Days</CardText>
+      </CardItem>
+      <CardItem>
+        <CountCard>{remaining.hours}</CountCard>
+        <CardText>Hours</CardText>
+      </CardItem>
+      <CardItem>
+        <CountCard>{remaining.minutes}</CountCard>
+        <CardText>Minutes</CardText>
+      </CardItem>
+      <CardItem>
+        <CountCard>{remaining.seconds}</CountCard>
+        <CardText>Seconds</CardText>
+      </CardItem>
+    </CardsContainer>
   );
 }
 
