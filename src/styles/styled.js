@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const Footer = styled.footer`
   background-image: url("https://raw.githubusercontent.com/CarlinGebyte/Reto-2-Sprint-2-AG/617d1dea7ba8ceb053348d0d029fc046d35c7e15/src/assets/img/pattern-hills.svg");
-  background-repeat: no-repeat; 
+  background-repeat: no-repeat;
   background-size: cover;
   height: 27vh;
   position: absolute;
@@ -21,7 +21,6 @@ export const ContainerAll = styled.div`
 export const Header = styled.header`
   padding-top: 90px;
   margin-bottom: 6%;
-
 `;
 
 export const FirstTitle = styled.h2`
@@ -48,10 +47,10 @@ export const ImgBrand = styled.svg`
 `;
 
 export const CardsContainer = styled.div`
-    display: flex;
-    justify-content: center;
-    width: 90%;
-    margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  width: 90%;
+  margin: 0 auto;
 `;
 
 export const CardItem = styled.div`

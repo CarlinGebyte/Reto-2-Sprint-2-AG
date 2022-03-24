@@ -1,5 +1,10 @@
 import React, { useState, useEffect } from "react";
-import { CardItem, CardsContainer, CardText, CountCard } from "../styles/styled";
+import {
+  CardItem,
+  CardsContainer,
+  CardText,
+  CountCard,
+} from "../styles/styled";
 import GetsRemainingTimestamp from "./CardUtils";
 
 const timeRemain = {
@@ -9,7 +14,7 @@ const timeRemain = {
   days: "00",
 };
 
-function Card({countdownTimestamp}) {
+function Card({ countdownTimestamp }) {
   const [remaining, setRemaining] = useState(timeRemain);
 
   useEffect(() => {
@@ -20,7 +25,7 @@ function Card({countdownTimestamp}) {
   }, [countdownTimestamp]);
 
   function updateRemainingTime(countdown) {
-    setRemaining  (GetsRemainingTimestamp(countdown))
+    setRemaining(GetsRemainingTimestamp(countdown));
   }
 
   return (
